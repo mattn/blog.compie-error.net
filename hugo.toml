@@ -1,3 +1,30 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://hugo.compile-error.net/'
+languageCode = 'ja-JP'
+title = '塩ブログ'
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "mattn"
+  description = "Software Engineer"
+  github = "mattn"
+  twitter = "mattn_jp"
+  email = "mattn.jp@gmail.com"
+  url = "https://mattn.kaoriya.net"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  favicon = "/images/github-mark.png"
+  avatar = "https://github.com/mattn.png"
+  headerIcon = "/images/github-mark-white.png"
+  location = "Osaka, Japan"
+  userStatusEmoji = "😀"
+  enableGitalk = false
+
+  [[params.links]]
+    title = "Link"
+    href = "https://github.com/mattn"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
